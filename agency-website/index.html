@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>madebyfour.studio | Creative Studio & Visual Production</title>
+
+  <!-- Google Font: Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6.5.2 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       SECTION 1: HERO VIEWPORT (Video Background)
+       ========================================================================= -->
+  <section id="home" class="hero-section">
+    <!-- Background Full-Viewport Video -->
+    <div class="bg">
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <!-- Main Viewport Container -->
+    <div class="hero-page">
+      
+      <!-- Top Header -->
+      <header class="header">
+        <!-- Logo Button -->
+        <a href="#home" class="logo-btn" aria-label="madebyfour.studio Home">
+          <img src="assets/Logo_MBF.jpg" alt="" width="52" height="52" class="logo-img" />
+        </a>
+
+        <!-- Center Nav Pill (Home, Our Works, Pricing) -->
+        <nav class="nav-pill" aria-label="Main Navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#our-works" class="nav-link">Our Works</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+        </nav>
+
+        <!-- Right Contact Button -->
+        <a href="#contact" class="contact-btn">Contact Us</a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-burger" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </header>
+
+      <!-- Center Hero Content (Clean without Trust 2000 pill) -->
+      <main class="hero-main">
+        <!-- Headline -->
+        <h1 class="headline anim">
+          <span class="headline-line line-1">Intelligence</span>
+          <span class="headline-line line-2">Designed To Evolve</span>
+        </h1>
+
+        <!-- Subhead -->
+        <p class="subhead anim" style="--d: 0.22s">
+          We turn your ideas into stunning visuals.<br class="subhead-br" />
+        </p>
+
+        <!-- CTA Button -->
+        <a href="#who-we-are" class="cta-btn anim" style="--d: 0.35s">Explore Our Studio</a>
+      </main>
+
+      <!-- Bottom Stats Jumbotron (Clean numbers, No Emojis) -->
+      <footer class="stats-footer">
+        <!-- Stat 1: 25+ Our Clients -->
+        <div class="stat-item anim" style="--d: 0.45s" data-target="25" data-suffix="+" data-decimals="0">
+          <div class="stat-value"><span class="stat-number">0</span><span class="stat-suffix">+</span></div>
+          <div class="stat-label">Our Clients</div>
+        </div>
+
+        <!-- Stat 2: 3 Countries Served -->
+        <div class="stat-item anim" style="--d: 0.55s" data-target="3" data-suffix="" data-decimals="0">
+          <div class="stat-value"><span class="stat-number">0</span><span class="stat-suffix"></span></div>
+          <div class="stat-label">Countries Served</div>
+        </div>
+
+        <!-- Stat 3: 150+ Projects Delivered -->
+        <div class="stat-item anim" style="--d: 0.65s" data-target="25" data-suffix="+" data-decimals="0">
+          <div class="stat-value"><span class="stat-number">0</span><span class="stat-suffix">+</span></div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- Mobile Overlay & Sheet Menu -->
+    <div class="mobile-overlay" id="mobile-overlay" hidden></div>
+    <div class="mobile-menu" id="mobile-menu" hidden aria-hidden="true">
+      <nav class="mobile-nav-links">
+        <a href="#home" class="mobile-nav-link active" style="--i: 1">Home</a>
+        <a href="#who-we-are" class="mobile-nav-link" style="--i: 2">About Us</a>
+        <a href="#our-works" class="mobile-nav-link" style="--i: 3">Our Works</a>
+        <a href="#pricing" class="mobile-nav-link" style="--i: 4">Pricing</a>
+        <a href="#contact" class="mobile-nav-link" style="--i: 5">Contact</a>
+      </nav>
+      <a href="#contact" class="mobile-signin-btn" style="--i: 6">Let's Talk</a>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 2: CLIENT LOGOS BAR (Larger Logos & Tighter Spacing)
+       ========================================================================= -->
+  <section class="clients-bar-section">
+    <div class="clients-container">
+      <div class="clients-marquee">
+        <!-- Set 1 -->
+        <div class="clients-track">
+          <div class="client-logo-item">
+            <img src="assets/client/Emina.png" alt="Emina" class="client-logo-img" />
+          </div>
+          <div class="client-logo-item">
+            <img src="assets/clients/OMG.png" alt="OMG" class="client-logo-img" />
+          </div>
+          <div class="client-logo-item">
+            <img src="assets/clients/Okheelo.png" alt="Okheelo" class="client-logo-img" />
+          </div>
+          <div class="client-logo-item">
+            <img src="assets/clients/Tedjacoffee.png" alt="Tedjacoffee" class="client-logo-img" />
+          </div>
+          <div class="client-logo-item">
+            <img src="assets/clients/Hairandbeyond.png" alt="Hair and Beyond" class="client-logo-img" />
+          </div>
+          <div class="client-logo-item">
+            <img src="assets/clients/Madformakeup.png" alt="Mad for Makeup" class="client-logo-img" />
+          </div>
+        </div>
+
+        <!-- Set 2 (for seamless loop) -->
+        <div class="clients-track">
+          <div class="client-logo-item">
+            <img src="assets/clients/Emina.png" alt="Emina" class="client-logo-img" />
+          </div>
+          <div class="client-logo-item">
+            <img src="assets/clients/OMG.png" alt="OMG" class="client-logo-img" />
+          </div>
+          <div class="client-logo-item">
+            <img src="assets/clients/Okheelo.png"" alt="Okheelo" class="client-logo-img" />
+          </div>
+          <div class="client-logo-item">
+            <img src="assets/clients/Tedjacoffee.png" alt="Tedjacoffee" class="client-logo-img" />
+          </div>
+          <div class="client-logo-item">
+            <img src="assets/clients/Hairandbeyond.png" alt="Hair and Beyond" class="client-logo-img" />
+          </div>
+          <div class="client-logo-item">
+            <img src="assets/clients/Madformakeup.png" alt="Mad for Makeup" class="client-logo-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 3: WHO WE ARE (Centered, No Emojis, Spaced Black Highlight Pills)
+       ========================================================================= -->
+  <section class="who-we-are-section" id="who-we-are">
+    <div class="content-wrapper centered-layout">
+      <!-- Section Badge -->
+      <div class="section-badge scroll-reveal" style="--delay: 0s">WHO WE ARE</div>
+      
+      <!-- Staggered Animated Rows (Centered & Generously Spaced) -->
+      <div class="statement-container centered">
+        
+        <!-- Row 1 -->
+        <div class="statement-row scroll-reveal" style="--delay: 0.1s">
+          <span class="row-text">We translate your direction into</span>
+        </div>
+        
+        <!-- Row 2 -->
+        <div class="statement-row scroll-reveal" style="--delay: 0.25s">
+          <span class="highlight-pill pop-item">stunning visuals</span>
+          <span class="row-text">,</span>
+        </div>
+        
+        <!-- Row 3 -->
+        <div class="statement-row scroll-reveal" style="--delay: 0.4s">
+          <span class="highlight-pill pop-item">meaningful experience</span>
+          <span class="row-text">, and</span>
+        </div>
+        
+        <!-- Row 4 -->
+        <div class="statement-row scroll-reveal" style="--delay: 0.55s">
+          <span class="highlight-pill pop-item">build systems</span>
+          <span class="row-text">to turn your brand</span>
+        </div>
+        
+        <!-- Row 5 -->
+        <div class="statement-row scroll-reveal" style="--delay: 0.7s">
+          <span class="row-text">into</span>
+          <span class="highlight-pill pop-item">predictable revenue</span>
+          <span class="row-text">.</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 4: OUR SERVICES (Image 3 Reference with Dot Grid & Interactive Cards)
+       ========================================================================= -->
+  <section class="services-section dot-grid-bg" id="services">
+    <div class="content-wrapper">
+      <div class="services-header scroll-reveal">
+        <div class="section-badge">SERVICES</div>
+        <h2 class="services-title">We design and run full-funnel creative & digital growth for ambitious brands.</h2>
+      </div>
+
+      <!-- Interactive 5-Card Deck Container -->
+      <div class="service-deck-wrapper scroll-reveal">
+        
+        <!-- Service Card 1: Social Media Design -->
+        <div class="service-card active" id="service-card-0">
+          <div class="card-visual">
+            <div class="corner-cross top-left">+</div>
+            <div class="corner-cross top-right">+</div>
+            <div class="corner-cross bottom-left">+</div>
+            <div class="corner-cross bottom-right">+</div>
+            <img src="assets/clients/Cat_Social Media Design.jpg" alt="Social Media Design" class="card-visual-img" />
+          </div>
+          <div class="card-info">
+            <span class="card-category">SOCIAL MEDIA DESIGN</span>
+            <h3 class="card-headline">High-impact feeds and carousels that captivate and convert.</h3>
+            <p class="card-desc">
+              From creative concept testing to aesthetic feed grids and high-converting storytelling. We architect Instagram and TikTok creative loops that build devoted brand followings.
+            </p>
+            <div class="card-tags">
+              <span class="service-tag"> Feed Design</span>
+              <span class="service-tag"> Reels & TikTok Editing</span>
+              <span class="service-tag"> Carousel Storytelling</span>
+              <span class="service-tag"> Engagement Strategy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2: Photography & Videography -->
+        <div class="service-card" id="service-card-1">
+          <div class="card-visual">
+            <div class="corner-cross top-left">+</div>
+            <div class="corner-cross top-right">+</div>
+            <div class="corner-cross bottom-left">+</div>
+            <div class="corner-cross bottom-right">+</div>
+            <img src="assets/clients/Cat_Photo.jpg" alt="Photography & Videography" class="card-visual-img" />
+          </div>
+          <div class="card-info">
+            <span class="card-category">PHOTOGRAPHY & VIDEOGRAPHY</span>
+            <h3 class="card-headline">Cinema-grade studio shoots and commercial product films.</h3>
+            <p class="card-desc">
+              Full-service studio and on-location production. From lighting setup and art direction to high-end color grading and commercial 4K video editing that elevate brand prestige.
+            </p>
+            <div class="card-tags">
+              <span class="service-tag"> Product Shoot</span>
+              <span class="service-tag"> Company Profile</span>
+              <span class="service-tag"> Color Grading</span>
+              <span class="service-tag"> Campaign Videos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3: UI/UX -->
+        <div class="service-card" id="service-card-2">
+          <div class="card-visual">
+            <div class="corner-cross top-left">+</div>
+            <div class="corner-cross top-right">+</div>
+            <div class="corner-cross bottom-left">+</div>
+            <div class="corner-cross bottom-right">+</div>
+            <img src="assets/clients/Cat_UIUX.jpg" alt="UI/UX Design" class="card-visual-img" />
+          </div>
+          <div class="card-info">
+            <span class="card-category">UI/UX DESIGN</span>
+            <h3 class="card-headline">Intuitive digital products crafted for frictionless conversion.</h3>
+            <p class="card-desc">
+              Data-informed interface architecture, modular design systems, user journey mapping, and pixel-perfect interactive prototypes tested with real customers.
+            </p>
+            <div class="card-tags">
+              <span class="service-tag"> Design Systems</span>
+              <span class="service-tag"> Mobile App UX</span>
+              <span class="service-tag"> Wireframing</span>
+              <span class="service-tag"> Conversion Optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 4: Web Development -->
+        <div class="service-card" id="service-card-3">
+          <div class="card-visual">
+            <div class="corner-cross top-left">+</div>
+            <div class="corner-cross top-right">+</div>
+            <div class="corner-cross bottom-left">+</div>
+            <div class="corner-cross bottom-right">+</div>
+            <img src="assets/clients/Cat_Web.jpg" alt="Web Development" class="card-visual-img" />
+          </div>
+          <div class="card-info">
+            <span class="card-category">WEB DEVELOPMENT</span>
+            <h3 class="card-headline">Lightning-fast, responsive web experiences with modern architecture.</h3>
+            <p class="card-desc">
+              Custom-coded web applications, interactive webflow/next.js builds, silky smooth micro-animations, and bulletproof SEO infrastructure engineered for high performance.
+            </p>
+            <div class="card-tags">
+              <span class="service-tag"> Landing Page Development</span>
+              <span class="service-tag"> E-Commerce</span>
+              <span class="service-tag"> SEO Optimization</span>
+              <span class="service-tag"> Company Profile</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 5: Shopify Development -->
+        <div class="service-card" id="service-card-4">
+          <div class="card-visual">
+            <div class="corner-cross top-left">+</div>
+            <div class="corner-cross top-right">+</div>
+            <div class="corner-cross bottom-left">+</div>
+            <div class="corner-cross bottom-right">+</div>
+            <div class="live-tag">● LIVE</div>
+            <img src="assets/clients/Cat_Shopify.jpg" alt="Shopify Development" class="card-visual-img" />
+          </div>
+          <div class="card-info">
+            <span class="card-category">SHOPIFY DEVELOPMENT</span>
+            <h3 class="card-headline">High-converting e-commerce storefronts tailored for scale.</h3>
+            <p class="card-desc">
+              Bespoke Liquid theme development, headless Shopify integrations, checkout optimization, custom app setups, and subscription workflows designed to maximize average order value.
+            </p>
+            <div class="card-tags">
+              <span class="service-tag"> Custom Liquid Themes</span>
+              <span class="service-tag"> Checkout Upsells</span>
+              <span class="service-tag"> Shopify Development</span>
+              <span class="service-tag"> Optimize New Features</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Interactive Pill Tabs -->
+      <div class="services-nav-container scroll-reveal">
+        <div class="services-nav-pills">
+          <button class="srv-pill-btn active" data-index="0">Social Media Design</button>
+          <button class="srv-pill-btn" data-index="1">Photography & Videography</button>
+          <button class="srv-pill-btn" data-index="2">UI/UX</button>
+          <button class="srv-pill-btn" data-index="3">Web Development</button>
+          <button class="srv-pill-btn" data-index="4">Shopify Development</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 5: OUR WORKS / PORTFOLIO (Links to Detailed Case Studies)
+       ========================================================================= -->
+  <section id="our-works" class="works-section dot-grid-bg">
+    <div class="content-wrapper">
+      <div class="section-header-row scroll-reveal">
+        <div>
+          <div class="section-badge">OUR WORKS</div>
+          <h2 class="section-title">Selected Case Studies & Design Highlights</h2>
+        </div>
+        <a href="case-study.html" class="outline-pill-btn">View Featured Case Study →</a>
+      </div>
+
+      <!-- Works Grid (Clickable to case-study.html) -->
+      <div class="works-grid">
+        <!-- Work 1: Emina E-Commerce Live -->
+        <a href="case-study-Emina.html" class="work-card-link">
+          <div class="work-card scroll-reveal" style="--delay: 0.1s">
+            <div class="work-img-box">
+              <img src="assets/clients/EminaWeb.jpg" alt="Emina E-Commerce Live Case Study" class="work-img" />
+              <div class="work-overlay-tag">E-Commerce</div>
+            </div>
+            <div class="work-content">
+              <div class="work-header">
+                <h3 class="work-title">Emina E-Commerce Live</h3>
+                <span class="work-year">2025</span>
+              </div>
+              <p class="work-desc">Creative design and motion graphics for a live e-commerce platform</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Work 2 -->
+        <a href="case-study-OMG.html" class="work-card-link">
+          <div class="work-card scroll-reveal" style="--delay: 0.2s">
+            <div class="work-img-box">
+              <img src="assets/clients/OMGWeb.jpg" alt="SoleCraft Heritage" class="work-img" />
+              <div class="work-overlay-tag">E-Commerce</div>
+            </div>
+            <div class="work-content">
+              <div class="work-header">
+                <h3 class="work-title">OMG E-Commerce Live</h3>
+                <span class="work-year">2025</span>
+              </div>
+              <p class="work-desc">Creative design and motion graphics for a live e-commerce platform.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Work 3 -->
+        <a href="case-study-Madeformakeup.html" class="work-card-link">
+          <div class="work-card scroll-reveal" style="--delay: 0.3s">
+            <div class="work-img-box">
+              <img src="assets/clients/Madformakeup Web.jpg" alt="Bloom Botanical Skincare" class="work-img" />
+              <div class="work-overlay-tag">Web Development</div>
+            </div>
+            <div class="work-content">
+              <div class="work-header">
+                <h3 class="work-title">MAD FOR MAKEUP E-Commerce Development Shopify</h3>
+                <span class="work-year">2025</span>
+              </div>
+              <p class="work-desc">Development Shopify and redesign with seamless integration.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Work 4 -->
+        <a href="case-study-Okheelo.html" class="work-card-link">
+          <div class="work-card scroll-reveal" style="--delay: 0.4s">
+            <div class="work-img-box">
+              <img src="assets/clients/OkheeloWeb.jpg" alt="Okheelo Social Media Design" class="work-img" />
+              <div class="work-overlay-tag">Social Media Design</div>
+            </div>
+            <div class="work-content">
+              <div class="work-header">
+                <h3 class="work-title">Okheelo Social Media Design</h3>
+                <span class="work-year">2025</span>
+              </div>
+              <p class="work-desc">Developing social media designs for a growing brand.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 6: PRICING & PLANS (5 Cards with exact Start From IDR)
+       ========================================================================= -->
+  <section id="pricing" class="pricing-section dot-grid-bg">
+    <div class="content-wrapper">
+      <div class="pricing-header scroll-reveal">
+        <div class="section-badge">PLANS & PRICING</div>
+        <h2 class="section-title">Transparent Pricing Tailored</h2>
+         <h2 class="section-title">for Your Growth</h2>
+        <p class="section-subtitle">Choose from our dedicated specialized services with clear, starting rates.</p>
+      </div>
+
+      <!-- 5 Pricing Cards Grid -->
+      <div class="pricing-grid-5">
+        
+        <!-- Pricing 1: Social Media Design -->
+        <div class="price-card scroll-reveal" style="--delay: 0.1s">
+          <div class="price-tier-tag">SERVICE 01</div>
+          <h3 class="price-title">Social Media Design</h3>
+          <p class="price-desc">Consistent, aesthetic feed and reel designs engineered to elevate brand authority.</p>
+          <div class="price-start-label">Starts from</div>
+          <div class="price-amount">IDR 3.899.999</div>
+          <ul class="price-features">
+            <li>✓ Monthly Content Calendar</li>
+            <li>✓ 12-20 Curated Feeds & Carousels</li>
+            <li>✓ Short-form Reel Concepts</li>
+            <li>✓ Copywriting & Hashtags</li>
+          </ul>
+          <a href="#contact" class="price-btn outline">Get Started</a>
+        </div>
+
+        <!-- Pricing 2: UI/UX -->
+        <div class="price-card scroll-reveal" style="--delay: 0.2s">
+          <div class="price-tier-tag">SERVICE 02</div>
+          <h3 class="price-title">UI/UX Design</h3>
+          <p class="price-desc">Intuitive, high-converting digital product interfaces and interactive prototypes.</p>
+          <div class="price-start-label">Starts from</div>
+          <div class="price-amount">IDR 2.500.000</div>
+          <ul class="price-features">
+            <li>✓ Wireframing & User Flows</li>
+            <li>✓ High-Fidelity Figma Prototype</li>
+            <li>✓ Modular Component Library</li>
+            <li>✓ Developer Handoff Tokens</li>
+          </ul>
+          <a href="#contact" class="price-btn outline">Get Started</a>
+        </div>
+
+        <!-- Pricing 3: Photography & Videography -->
+        <div class="price-card scroll-reveal" style="--delay: 0.3s">
+          <div class="price-tier-tag">SERVICE 03</div>
+          <h3 class="price-title">Photo & Video</h3>
+          <p class="price-desc">Commercial studio shoots, lookbooks, and cinema-grade promotional video reels.</p>
+          <div class="price-start-label">Starts from</div>
+          <div class="price-amount">IDR 1.899.000</div>
+          <ul class="price-features">
+            <li>✓ Professional Studio / Location Shoot</li>
+            <li>✓ High-Resolution Retouched Photos</li>
+            <li>✓ 4K Commercial Video Editing</li>
+            <li>✓ Color Grading & Audio Mixing</li>
+          </ul>
+          <a href="#contact" class="price-btn outline">Get Started</a>
+        </div>
+
+        <!-- Pricing 4: Web Development -->
+        <div class="price-card scroll-reveal" style="--delay: 0.4s">
+          <div class="price-tier-tag">SERVICE 04</div>
+          <h3 class="price-title">Web Development</h3>
+          <p class="price-desc">Ultra-fast, responsive custom web platforms built with modern technology stacks.</p>
+          <div class="price-start-label">Starts from</div>
+          <div class="price-amount">IDR 1.499.000</div>
+          <ul class="price-features">
+            <li>✓ Custom Responsive Web Build</li>
+            <li>✓ Micro-Interactions & Animations</li>
+            <li>✓ SEO & Performance Optimization</li>
+            <li>✓ Cross-Browser & Mobile QA</li>
+          </ul>
+          <a href="#contact" class="price-btn outline">Get Started</a>
+        </div>
+
+        <!-- Pricing 5: Shopify Development -->
+        <div class="price-card scroll-reveal" style="--delay: 0.5s">
+          <div class="price-tier-tag">SERVICE 05</div>
+          <h3 class="price-title">Shopify Development</h3>
+          <p class="price-desc">Custom e-commerce storefronts designed for maximum conversion rate and high AOV.</p>
+          <div class="price-start-label">Starts from</div>
+          <div class="price-amount">IDR 4.899.999</div>
+          <ul class="price-features">
+            <li>✓ Bespoke Shopify Liquid Theme</li>
+            <li>✓ High-Converting Checkout Funnel</li>
+            <li>✓ Payment Gateway & Shipping Setup</li>
+            <li>✓ Upsell & Inventory App Integrations</li>
+          </ul>
+          <a href="#contact" class="price-btn outline">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 7: CONTACT / INQUIRY BANNER
+       ========================================================================= -->
+  <section id="contact" class="contact-section">
+    <div class="content-wrapper">
+      <div class="contact-card scroll-reveal">
+        <div class="contact-content">
+          <div class="section-badge light">GET IN TOUCH</div>
+          <h2 class="contact-headline">Ready to translate your vision into iconic design?</h2>
+          <p class="contact-sub">Connect with our creative director to discuss timelines, scopes, and budget.</p>
+          
+          <div class="contact-actions">
+            <a href="mailto:madebyfourbubu@gmail.com" class="cta-primary-btn">madebyfourbubu@gmail.com</a>
+            <a href="https://wa.me/6282120529510" target="_blank" class="cta-secondary-btn">Direct WhatsApp Madebyfour</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 8: FOOTER (Image 4 Reference)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="footer-wrapper">
+      
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand-col">
+          <h3 class="footer-logo-title">madebyfour.studio</h3>
+          <p class="footer-tagline">
+            The creative system behind growing brands. Consistent design execution, delivered daily, through one subscription.
+          </p>
+          <div class="footer-copyright-text">
+            © 2026 madebyfour.studio<br />All Rights Reserved.
+          </div>
+        </div>
+
+        <!-- Information Column -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Information</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#who-we-are">About Us</a></li>
+            <li><a href="#our-works">Our Works</a></li>
+            <li><a href="#pricing">Plans & Pricing</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Column -->
+        <div class="footer-social-col">
+          <h4 class="footer-col-title">Social Media</h4>
+          <div class="social-icons-row">
+            <a href="https://www.instagram.com/madebyfour.studio/" target="_blank" rel="noopener noreferrer" class="social-link-btn">
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
