@@ -146,6 +146,15 @@ document.addEventListener('DOMContentLoaded', () => {
       servicePills.forEach((p) => p.classList.remove('active'));
       pill.classList.add('active');
 
+      // Keep the selected tab visible when the tab row scrolls on phones
+      const pillRow = pill.parentElement;
+      if (pillRow && pillRow.scrollWidth > pillRow.clientWidth) {
+        pillRow.scrollTo({
+          left: pill.offsetLeft - (pillRow.clientWidth - pill.offsetWidth) / 2,
+          behavior: 'smooth'
+        });
+      }
+
       // Update Active Card
       serviceCards.forEach((card, idx) => {
         if (idx.toString() === targetIndex) {
