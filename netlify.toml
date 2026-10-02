@@ -1,0 +1,4 @@
+# Static site: files are served directly from agency-website/, no build step.
+[build]
+  base = "agency-website"
+  publish = "."
